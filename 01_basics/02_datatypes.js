@@ -43,7 +43,7 @@ E.G. jab aapne kisi server se request bheji mujhe temperature btao? Maanlo serve
 
 5. UNDEFINED => abhi koi value assign nahi hui hai.
 
-6. SYMBOL => implementation more in react, to find UNIQUENESS in components in figma tolls also
+6. SYMBOL => implementation more in react, to find UNIQUENESS in components in figma tools also
 
 
 #1: ALL OF ABOVE IS PRIMITIVE DATA TYPE
