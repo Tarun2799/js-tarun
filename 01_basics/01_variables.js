@@ -1,6 +1,22 @@
 const accountId = 12223
 // const is keyword for declaring the constants that can not be changed once initialized. and if you assigned any value again to a const then it will give an error. like (accountId = 456 )=> this is gives an error becoz we already assinged the 12223 ti this constant.
 
+
+// const num = 45;
+// you cannot assign any type of value once intialized.
+let num = 45;
+
+console.log(num)
+
+// num = 856;
+num = "tarun";
+// you can assign any datatype of value again in let,var. once you initialized with any any datatype.
+console.log(num)
+
+
+
+
+
 let accountEmail = "tarun@google.com"
 var accountPassword = "454663"
 /* prefer not to use var
