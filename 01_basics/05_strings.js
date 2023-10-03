@@ -27,9 +27,9 @@ console.log(gameName.length); // 8
 
 console.log(gameName.toUpperCase()); // NOT changing the original value, because of STACK.
 
-console.log(gameName.charAt(2)); // It tells at what index , what is the charcter ==> r
+console.log(gameName.charAt(2)); // It tells at what index , what is the charcter ==> r. charAt(index)
 
-console.log(gameName.indexOf('t')); // It tells given character is at what index. ==> 0
+console.log(gameName.indexOf('t')); // It tells given character is at what index. ==> 0. indexOf('character')
 
 // now more about METHODS OF STRINGS ==> IMPORTANT
 // some times we have USE slice the string.
@@ -39,19 +39,21 @@ console.log(newString); // SUBSTRING MAI NEGATUVE VALUE USE NI HOTI
 
 
 // SLICE : NEGATIVE VALUE USE HOJATI HAI ISME
-const anotherString = gameName.slice(-8, -4);
+const anotherString = gameName.slice(-8, -4); // ans == taru(-4 not included i.e. last index )
+// t   a  r  u  n  -  t  j
+// -8 -7 -6 -5 -4 -3 -2 -1
 
 // sometimes input form mai extra spaces AAJATE  hai, to vo humme nahi chahiye . Let's see kya karenge
 
 const newStringOne = "    tarun   ";
 console.log(newStringOne); // gives     tarun   
 console.log(newStringOne.trim()); // gives tarun :==> spaces removed.
-// go to MDN DOCUMENTS: ==> only WHITE SPACES defined as white spaces chaarcters and line terminators.
+// go to MDN DOCUMENTS: ==> only WHITE SPACES defined as white spaces characters and line terminators(\n).
 
 
 
 
-// suppose aapke pass url aya :==> browers spaces in samjhta covert into %20(urln coding) 
+// suppose aapke pass url aya :==> browers spaces in samjhta convert into %20(urln coding) 
 // eg : "https://tarun.com/tarun%20jhamb"
 
 const url = "https://tarun.com/tarun%20jhamb";
