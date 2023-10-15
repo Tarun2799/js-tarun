@@ -1,0 +1,58 @@
+<!-- The DOM, or Document Object Model, is a way for programmers to interact with web pages. It's a tree-like structure that represents all the elements on a page, like the header, paragraphs, images, and buttons.
+
+The DOM allows programmers to add, remove, and modify elements on a page, as well as change their style and behavior. This is how programmers are able to create dynamic and interactive web pages.
+
+Here's a simple analogy to help you understand the DOM:
+
+Imagine a web page as a house. The DOM would be the blueprint for the house. It would show all the different parts of the house, like the rooms, windows, and doors.
+
+Just like you can use the blueprint to make changes to the house, programmers can use the DOM to make changes to a web page. For example, they could add a new room to the house, or change the color of a door.
+
+
+
+MDN documents
+
+Introduction to the DOM
+The Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. 
+
+
+What is the DOM?
+The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+
+A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript. -->
+
+
+
+
+
+ <!-- When you do console.log(window) on browser you will get so many DETAILS in this object, eg: geo, redux. window in itself is a complex object. 
+And when you do console.log(window) it will give so many details inside DOCUMENT like jQuery etc. but when you do, console.log(window.document) or console.log(document) => shortcut to get html document on web page. but this will display a little less details than console.log(window) . so if you want all details you can use: CONSOLE.DIR(DOCUMENT) and console. ... or bhi hote hai.
+
+Ye jo document ka OBJECT kis Model par bna hua hai inside the browser, ye DOM par based hai and ye or isse humme Diagram ke through hi smjhna padega.  //// Usually diagram start from first element WINDOW ///////
+
+ye diagram bas pta hona chahiye har baar bnana nahi padhta hai. May be INTERVIEW MAI PUCH LE.
+main point ye hai ki kis node ke kitna child hai or uspar jana kaise hai. Like: window->document-> html -> body-> div(tell discription which class or id of div to be at a particular div) -> p (same as div) -> and so on -->
+
+<!DOCTYPE html>  <!-- ye btata ye ki ye document ka TYPE kya hai: html5 hai. IS document mai html hai.-->
+<html lang="en"> <!-- Yahan se actual page start hota hai . Iske ander head hai and head ke ander kuch ELEMNTS HAI like body . Go and see the diagram-->
+<head>
+    <meta charset="UTF-8"> <!-- 1st node of head: ye meta mai sirf ek attribute hai, koi or node nahi hai-->
+    <title>Document</title> <!-- 2nd node of head: it contains further a textnode. i.e. textvalue = document-->
+</head>
+<body> <!-- ab ke ander ek div node hai. further div ke 2 nodes hai i.e. h1 , p.-->
+    <div class="bg-black">
+        <h1 class="heading">Lorem ipsum dolor sit amet.</h1> <!-- h1 node conatins ek attribute.-->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, velit!</p> <!-- it conatains a textnode -->
+    </div>
+
+    <script src="">
+        console.log(document.baseURI)  // tells what is baseuri of this website like this: console.log(document.baseURI) ==> https://en.wikipedia.org/wiki/Brendan_Eich.  console.log(document.links) ==> all the links on this document . or ye "HTMLcollection" ki form mai milte hai , not an array. they are just having some similarity like ARRAY but they are not array. 
+        // Like eg: console.log(document.links[2]) ==> gives 2nd link of the page: <a href="" title=""> </a>
+        // document.getElementById('firstHeading') ==> give whole html ELEMNT that have this id with its html tags. and hum iske uppr bhi MANIPULATIONS kar skte hai.
+        // document.getElementById('firstHeading').innerHTML = "<h1> chai aur code </h1>" ==> this will replace whatever in the first heading with : chai aur code.
+    </script>
+</body>
+</html>
+
+
+
